@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Julia Meshcheryakova</title>
-<meta name="description" content="Julia Meshcheryakova, ML engineer with an activist mindset: AI security training games, Quizrun, playful learning apps and volunteering.">
+<meta name="description" content="Julia Meshcheryakova: ML engineer with an activist mindset. Projects, volunteering, and the things I build for fun.">
 <meta property="og:title" content="Julia Meshcheryakova">
-<meta property="og:description" content="ML engineer with an activist mindset. Cutting Corners Hero (AI security workshop game), Quizrun (running + lateral-thinking puzzles) and other projects.">
+<meta property="og:description" content="ML engineer with an activist mindset. Cutting Corners Hero, Quizrun, Food Enough and other things I build.">
 <meta property="og:image" content="https://julia-meshcheryakova.github.io/assets/facilitator.png">
 <meta property="og:url" content="https://julia-meshcheryakova.github.io/">
 <meta name="twitter:card" content="summary_large_image">
@@ -35,6 +35,9 @@ footer{margin-top:40px;color:#8b949e;font-size:.85rem}
 .bio{margin:-12px 0 8px}
 .bio p{margin-bottom:12px}
 .note{color:#8b949e;font-size:.85rem;margin-top:10px}
+.logo{width:56px;height:56px;border-radius:12px;background:#fff;padding:6px;flex:none}
+.card-head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.card-head h3{margin:0}
 .wip{font-size:.7rem;background:#9e6a03;color:#fff;padding:2px 6px;border-radius:6px;vertical-align:middle}
 .card ul{padding-left:18px}
 .card li{margin-bottom:6px}
@@ -44,16 +47,17 @@ footer{margin-top:40px;color:#8b949e;font-size:.85rem}
 <body>
 <main>
   <h1>Julia Meshcheryakova</h1>
-  <p class="lead">I build hands-on things around AI: security training games, agents, and small apps that make learning less boring.</p>
+  <p class="lead">ML engineer · London</p>
 
   <section class="bio">
-    <p>I'm an ML engineer with an activist mindset: I like projects that improve lives by means of technology.
-      14+ years in IT, the last seven in machine learning, now at Microsoft. I'm good at converting real-world
-      problems to technical level and delivering solutions, from 3D segmentation of teeth that was supposed to be
-      an ML task and turned out to be pure algebra and geometry, to agents and GraphRAG for pharma research.
-      Next I want to go deeper: closer to research and to the models themselves.</p>
-    <p>Outside work I run (my first marathon is for the MS Society), play intellectual games, and turn both into
-      projects. My guilty pleasure is wordplay naming and logos.</p>
+    <p>I'm an ML engineer with an activist mindset: 15 years in IT, 8 of them in machine learning, mostly on
+      projects that improve lives, from healthcare and pharma research to clean energy.</p>
+    <p>I'm good at turning a messy real-world problem into a technical one. Once I was handed 3D segmentation of
+      teeth as an ML task and solved it with plain algebra and geometry instead. Standing next to the whiteboard
+      drawing teeth was one of the best moments of my life. Now I want to go deeper: closer to research and to the
+      models themselves.</p>
+    <p>Outside work I run, play intellectual games and sometimes turn the two into a project. My guilty pleasure is
+      wordplay naming and logos inventing.</p>
   </section>
 
   <h2>Featured</h2>
@@ -61,50 +65,47 @@ footer{margin-top:40px;color:#8b949e;font-size:.85rem}
     <a href="https://github.com/julia-meshcheryakova/cutting-corners-hero-workshop#run-it-at-your-own-event"><img src="assets/demo.gif" alt="A round of Cutting Corners Hero: a participant writes a reckless shortcut, predicts the impact, and gets scored by the AI judge"></a>
     <div>
       <h3>🦸 Cutting Corners Hero</h3>
-      <p><strong>Inverted AI security training.</strong> Instead of being told what not to do, participants compete
-        to pitch the most believably reckless shortcut for a realistic AI-agent scenario, predict how it backfires,
-        and then see what actually blows up.</p>
-      <p>An LLM judge scores realism, danger, creativity and how well you predicted the fallout. Every scenario
-        is grounded in a published taxonomy of attacks on AI agents and mapped to the OWASP Top 10 for LLM Applications (2026)
-        and the OWASP Top 10 for Agentic Applications.</p>
+      <p><strong>AI security training, upside down.</strong> No list of don'ts. Players compete to pitch the most
+        believable reckless shortcut for an AI agent, guess how it will backfire, and then see what actually blows up.</p>
+      <p>An LLM judge scores realism, danger, creativity and how well you called the fallout. Every scenario comes
+        from a published taxonomy of attacks on AI agents and maps to the OWASP Top 10 for LLM and for Agentic
+        Applications.</p>
       <div class="tags">
         <span class="tag">AI security</span><span class="tag">prompt injection</span><span class="tag">OWASP LLM Top 10</span>
         <span class="tag">OWASP Agentic Top 10</span><span class="tag">workshop</span><span class="tag">Flask · Azure OpenAI</span>
       </div>
+      <p class="note">It's played live, with a facilitator. Want it at your event? Everything you need is on GitHub.</p>
       <div class="btns">
-        <a class="btn primary" href="https://github.com/julia-meshcheryakova/cutting-corners-hero-workshop#run-it-at-your-own-event">Run it at your event (GitHub)</a>
+        <a class="btn primary" href="https://github.com/julia-meshcheryakova/cutting-corners-hero-workshop#run-it-at-your-own-event">Run it at your event</a>
       </div>
-      <p class="note">Rounds are played live with a facilitator, so there's no public self-serve version.</p>
     </div>
   </section>
 
   <h2>More projects</h2>
   <div class="grid">
     <section class="card">
-      <h3>🧩 Quizrun</h3>
-      <p>A running event with lateral-thinking puzzles: logic riddles you solve mostly by reasoning. You run or walk
-        a course of about 5 km and solve puzzles at checkpoints along the way. Correct answers cut your finish time,
-        so a sharp thinker can beat a faster runner.</p>
-      <p>Community events in 50+ cities across 10+ countries, 400+ participants to date. My passion project: I founded it and build the app.</p>
+      <div class="card-head"><img class="logo" src="assets/quizrun-logo.png" alt="Quizrun logo"><h3>Quizrun</h3></div>
+      <p>A hybrid sport I co-invented. You run about 5 km and solve lateral-thinking puzzles at checkpoints; every
+        correct answer takes time off your finish, so a sharp thinker can beat a faster runner.</p>
+      <p>500+ participants from 60+ cities in 10+ countries so far. I build the app. Next goal: make it an Olympic sport.</p>
       <div class="btns">
         <a class="btn primary" href="https://quizrun.org">quizrun.org</a>
         <a class="btn" href="https://quizrun.org/events">Find an event</a>
       </div>
     </section>
     <section class="card">
-      <h3>🥗 Food Enough <span class="wip">WIP</span></h3>
-      <p>Scan any menu, see what you can eat. A solution growing from my own pain as a picky eater suffering from
-        choice paralysis. Looking to ship it soon ;)</p>
+      <div class="card-head"><img class="logo" src="assets/food-enough-logo.svg" alt="Food Enough logo"><h3>Food Enough <span class="wip">WIP</span></h3></div>
+      <p>Your lens on any menu. Scan it, in any language, and see what you can actually eat, then get help choosing.</p>
+      <p>It grew from my own pain: I'm a picky eater with choice paralysis. Shipping soon ;)</p>
       <div class="btns">
         <a class="btn" href="https://food-enough.pages.dev/">Try the preview</a>
       </div>
     </section>
     <section class="card">
       <h3>🏃 CogniRun</h3>
-      <p>Developed during a hackathon. Run 3 km. After every kilometre the app asks a question (trivia, then logic,
-        then maths), and faster answers score more. You finish with a score breakdown, percentiles, your GPS route
-        and pace profile.</p>
-      <p>Next: growing it into a production-grade engine for healthy habits, gamifying running and memorisation.</p>
+      <p>Built at a hackathon. Run 3 km, and after every kilometre the app asks you a question: trivia, then logic,
+        then maths. Answer faster, score more. At the end you see your route, pace and how you compare.</p>
+      <p>Next: a proper engine for growing healthy habits, gamifying running and memorisation.</p>
       <div class="btns">
         <a class="btn" href="https://cognirun-zeta.vercel.app">Open app</a>
         <a class="btn" href="https://github.com/julia-meshcheryakova/cognirun">GitHub</a>
@@ -112,7 +113,7 @@ footer{margin-top:40px;color:#8b949e;font-size:.85rem}
     </section>
     <section class="card">
       <h3>🚢 Battleship: New Wave</h3>
-      <p>A browser take on the classic game, from my pet-project <em>zoo</em>.</p>
+      <p>The classic game, remade for the browser. From my <em>zoo</em> of pet projects.</p>
       <div class="btns">
         <a class="btn" href="https://julia-meshcheryakova.github.io/zoo/battleship-new-wave.html">Play</a>
         <a class="btn" href="https://github.com/julia-meshcheryakova/zoo">GitHub</a>
@@ -124,29 +125,29 @@ footer{margin-top:40px;color:#8b949e;font-size:.85rem}
   <div class="grid">
     <section class="card">
       <h3>🏅 London Marathon 2027 for the MS Society</h3>
-      <p>I only started running in 2024, and this is my second attempt to make my first marathon meaningful.
-        For me the MS Society is not a random organisation that provides a spot for an event many runners dream of:
-        I want to contribute to MS research both financially and through my skills.</p>
+      <p>I only started running in 2024, and this is my second attempt to make my first marathon meaningful. The MS
+        Society isn't a random charity that happened to have a spot: I want to help MS research, with money and with
+        my skills.</p>
       <div class="btns">
-        <a class="btn primary" href="https://justgiving.com/page/julia-meshcheryakova-for-ms-society-2027">Support on JustGiving</a>
+        <a class="btn primary" href="https://justgiving.com/page/julia-meshcheryakova-for-ms-society-2027">Support me on JustGiving</a>
       </div>
     </section>
     <section class="card">
       <h3>♻️ Eco-activism</h3>
       <ul>
-        <li><strong>eco-dvor &amp; eco-taxi</strong>, Voronezh: automated route planning for coordinators (30% faster
-          runs); the project grew from 15 to 50 mobile collection points and a 5k community.</li>
-        <li><strong>etonemusor.ru</strong>: crowdsourced waste-sorting map; integrated data from 5+ eco-projects,
-          adding 100+ points.</li>
-        <li><strong>Green Green</strong>, Yerevan: organised 5 clean-ups.</li>
+        <li><strong>eco-dvor &amp; eco-taxi</strong>, Voronezh. I automated route planning for the volunteer
+          coordinators (30% faster runs). We grew from 15 to 50 collection points and a 5k community, and in the end
+          a commercial recycling company opened in the city.</li>
+        <li><strong>etonemusor.ru</strong>, a crowdsourced recycling map. I brought in data from 5+ eco-projects: 100+ new points.</li>
+        <li><strong>Green Green</strong>, Yerevan. Organised 5 clean-ups.</li>
       </ul>
     </section>
     <section class="card">
-      <h3>🤝 Community</h3>
+      <h3>🧠 Community</h3>
       <ul>
-        <li>Mentored in ML for TechLeaders; the programme became DataArt's ML internship.</li>
-        <li>Organised IT-Cup, an intellectual games tournament for the IT industry, 7 times (and won it in 2013).</li>
-        <li>StackOverflow: 3200+ reputation, ~180k people reached.</li>
+        <li><strong>IT-Cup</strong>, an intellectual games tournament for IT people. Organised it 7 times, won it once.</li>
+        <li><strong>TechLeaders.</strong> Mentored in ML; the programme became DataArt's ML internship.</li>
+        <li><strong>Stack Overflow.</strong> 3200+ reputation, answers seen by ~180k people.</li>
       </ul>
     </section>
   </div>
