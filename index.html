@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Julia Meshcheryakova</title>
-<meta name="description" content="Projects by Julia Meshcheryakova: AI security training games, AI agents and playful learning apps.">
-<meta property="og:title" content="Julia Meshcheryakova: projects">
-<meta property="og:description" content="Cutting Corners Hero, an inverted AI security workshop game mapped to the OWASP Top 10 for LLM and Agentic Applications, plus other projects.">
+<meta name="description" content="Julia Meshcheryakova, ML engineer with an activist mindset: AI security training games, Quizrun, playful learning apps and volunteering.">
+<meta property="og:title" content="Julia Meshcheryakova">
+<meta property="og:description" content="ML engineer with an activist mindset. Cutting Corners Hero (AI security workshop game), Quizrun (running + lateral-thinking puzzles) and other projects.">
 <meta property="og:image" content="https://julia-meshcheryakova.github.io/assets/facilitator.png">
 <meta property="og:url" content="https://julia-meshcheryakova.github.io/">
 <meta name="twitter:card" content="summary_large_image">
@@ -32,6 +32,12 @@ h2{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:#8b949e;ma
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .grid .card h3{font-size:1.1rem}
 footer{margin-top:40px;color:#8b949e;font-size:.85rem}
+.bio{margin:-12px 0 8px}
+.bio p{margin-bottom:12px}
+.note{color:#8b949e;font-size:.85rem;margin-top:10px}
+.wip{font-size:.7rem;background:#9e6a03;color:#fff;padding:2px 6px;border-radius:6px;vertical-align:middle}
+.card ul{padding-left:18px}
+.card li{margin-bottom:6px}
 @media (max-width:640px){.featured,.grid{grid-template-columns:1fr}.featured img{max-width:280px;margin:0 auto;display:block}}
 </style>
 </head>
@@ -40,9 +46,19 @@ footer{margin-top:40px;color:#8b949e;font-size:.85rem}
   <h1>Julia Meshcheryakova</h1>
   <p class="lead">I build hands-on things around AI: security training games, agents, and small apps that make learning less boring.</p>
 
+  <section class="bio">
+    <p>I'm an ML engineer with an activist mindset: I like projects that improve lives by means of technology.
+      14+ years in IT, the last seven in machine learning, now at Microsoft. I'm good at converting real-world
+      problems to technical level and delivering solutions, from 3D segmentation of teeth that was supposed to be
+      an ML task and turned out to be pure algebra and geometry, to agents and GraphRAG for pharma research.
+      Next I want to go deeper: closer to research and to the models themselves.</p>
+    <p>Outside work I run (my first marathon is for the MS Society), play intellectual games, and turn both into
+      projects. My guilty pleasure is wordplay naming and logos.</p>
+  </section>
+
   <h2>Featured</h2>
   <section class="card featured">
-    <a href="https://cutting-corners-hero.azurewebsites.net/"><img src="assets/demo.gif" alt="A round of Cutting Corners Hero: a participant writes a reckless shortcut, predicts the impact, and gets scored by the AI judge"></a>
+    <a href="https://github.com/julia-meshcheryakova/cutting-corners-hero-workshop#run-it-at-your-own-event"><img src="assets/demo.gif" alt="A round of Cutting Corners Hero: a participant writes a reckless shortcut, predicts the impact, and gets scored by the AI judge"></a>
     <div>
       <h3>🦸 Cutting Corners Hero</h3>
       <p><strong>Inverted AI security training.</strong> Instead of being told what not to do, participants compete
@@ -56,19 +72,39 @@ footer{margin-top:40px;color:#8b949e;font-size:.85rem}
         <span class="tag">OWASP Agentic Top 10</span><span class="tag">workshop</span><span class="tag">Flask · Azure OpenAI</span>
       </div>
       <div class="btns">
-        <a class="btn primary" href="https://cutting-corners-hero.azurewebsites.net/">▶ Play a round</a>
-        <a class="btn" href="https://github.com/julia-meshcheryakova/cutting-corners-hero-workshop">GitHub repo</a>
-        <a class="btn" href="https://github.com/julia-meshcheryakova/cutting-corners-hero-workshop#run-it-at-your-own-event">Run it at your event</a>
+        <a class="btn primary" href="https://github.com/julia-meshcheryakova/cutting-corners-hero-workshop#run-it-at-your-own-event">Run it at your event (GitHub)</a>
       </div>
+      <p class="note">Rounds are played live with a facilitator, so there's no public self-serve version.</p>
     </div>
   </section>
 
   <h2>More projects</h2>
   <div class="grid">
     <section class="card">
+      <h3>🧩 Quizrun</h3>
+      <p>A running event with lateral-thinking puzzles: logic riddles you solve mostly by reasoning. You run or walk
+        a course of about 5 km and solve puzzles at checkpoints along the way. Correct answers cut your finish time,
+        so a sharp thinker can beat a faster runner.</p>
+      <p>Community events in 50+ cities across 10+ countries, 400+ participants to date. My passion project: I founded it and build the app.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://quizrun.org">quizrun.org</a>
+        <a class="btn" href="https://quizrun.org/events">Find an event</a>
+      </div>
+    </section>
+    <section class="card">
+      <h3>🥗 Food Enough <span class="wip">WIP</span></h3>
+      <p>Scan any menu, see what you can eat. A solution growing from my own pain as a picky eater suffering from
+        choice paralysis. Looking to ship it soon ;)</p>
+      <div class="btns">
+        <a class="btn" href="https://food-enough.pages.dev/">Try the preview</a>
+      </div>
+    </section>
+    <section class="card">
       <h3>🏃 CogniRun</h3>
-      <p>Run 3 km. After every kilometre the app asks a question (trivia, then logic, then maths), and faster answers
-        score more. You finish with a score breakdown, percentiles, your GPS route and pace profile.</p>
+      <p>Developed during a hackathon. Run 3 km. After every kilometre the app asks a question (trivia, then logic,
+        then maths), and faster answers score more. You finish with a score breakdown, percentiles, your GPS route
+        and pace profile.</p>
+      <p>Next: growing it into a production-grade engine for healthy habits, gamifying running and memorisation.</p>
       <div class="btns">
         <a class="btn" href="https://cognirun-zeta.vercel.app">Open app</a>
         <a class="btn" href="https://github.com/julia-meshcheryakova/cognirun">GitHub</a>
@@ -84,9 +120,41 @@ footer{margin-top:40px;color:#8b949e;font-size:.85rem}
     </section>
   </div>
 
+  <h2>Volunteering</h2>
+  <div class="grid">
+    <section class="card">
+      <h3>🏅 London Marathon 2027 for the MS Society</h3>
+      <p>I only started running in 2024, and this is my second attempt to make my first marathon meaningful.
+        For me the MS Society is not a random organisation that provides a spot for an event many runners dream of:
+        I want to contribute to MS research both financially and through my skills.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://justgiving.com/page/julia-meshcheryakova-for-ms-society-2027">Support on JustGiving</a>
+      </div>
+    </section>
+    <section class="card">
+      <h3>♻️ Eco-activism</h3>
+      <ul>
+        <li><strong>eco-dvor &amp; eco-taxi</strong>, Voronezh: automated route planning for coordinators (30% faster
+          runs); the project grew from 15 to 50 mobile collection points and a 5k community.</li>
+        <li><strong>etonemusor.ru</strong>: crowdsourced waste-sorting map; integrated data from 5+ eco-projects,
+          adding 100+ points.</li>
+        <li><strong>Green Green</strong>, Yerevan: organised 5 clean-ups.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h3>🤝 Community</h3>
+      <ul>
+        <li>Mentored in ML for TechLeaders; the programme became DataArt's ML internship.</li>
+        <li>Organised IT-Cup, an intellectual games tournament for the IT industry, 7 times (and won it in 2013).</li>
+        <li>StackOverflow: 3200+ reputation, ~180k people reached.</li>
+      </ul>
+    </section>
+  </div>
+
   <footer>
-    <a href="https://github.com/julia-meshcheryakova">GitHub</a>
-    <!-- TODO: add LinkedIn: · <a href="https://www.linkedin.com/in/YOUR-HANDLE/">LinkedIn</a> -->
+    <a href="https://github.com/julia-meshcheryakova">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/julia-meshcheryakova">LinkedIn</a> ·
+    <a href="https://quizrun.org">Quizrun</a>
   </footer>
 </main>
 </body>
